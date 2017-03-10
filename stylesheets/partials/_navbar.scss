@@ -1,0 +1,37 @@
+.header {
+  align-items: center;
+  border: 1px dotted #ffffff;
+  display: flex;
+  height: 120px;
+}
+
+.logo {
+  flex: 3;
+  text-align: center;
+
+  &__text {
+    background: url('../images/logotype.png') no-repeat;
+    background-position: left center;
+    font-size: 25px;
+    letter-spacing: 1.1px;
+    padding-left: 50px;
+  }
+}
+
+.main-nav {
+  flex: 5;
+
+  &__ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__a {
+    font-size: 18px;
+
+    &:hover,
+    &:active {
+      color: $nav-hover;
+    }
+  }
+}

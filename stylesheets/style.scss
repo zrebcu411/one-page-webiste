@@ -1,6 +1,10 @@
+// Vendor
+@import "vendor/normalize";
+
 // Modules
 @import "modules/variables";
 @import "modules/mixins";
 
 //Partials
 @import "partials/base";
+@import "partials/navbar";

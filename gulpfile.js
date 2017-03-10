@@ -8,5 +8,5 @@ gulp.task('styles', function() {
 });
 
 gulp.task('start', function() {
-    gulp.watch(['./stylesheets/*.scss','./stylesheets/partials/*.scss','./stylesheets/modules/*.scss'], ['styles']);
+    gulp.watch('./stylesheets/**/*.scss', ['styles']);
 });

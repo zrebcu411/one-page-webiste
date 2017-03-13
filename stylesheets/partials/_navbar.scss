@@ -1,63 +1,64 @@
 .header {
   align-items: center;
-  border: 1px dotted #ffffff;
+  border-bottom: 1px solid $header-border-color;
   display: flex;
-  min-height: 120px;
-}
+  min-height: 8em;
 
-.header__left {
-  flex: 1 1 40%;
-  text-align: center;
-  margin: 0;
+  &__left-part {
+    flex: 1 1 40%;
+    margin: 0;
+    text-align: center;
+  }
+
+  &__right-part {
+    flex: 1 1 60%;
+  }
 }
 
 .logo {
   background: url('../images/logotype.png') no-repeat;
   background-position: left center;
-  font-size: 25px;
+  font-size: .8em;
   letter-spacing: 1.1px;
-  padding-left: 50px;
+  padding-left: 1.8em;
 }
 
 .toggle-icon {
-  float: right;
   display: none;
-  margin-right: 20px;
+  float: right;
+  margin-right: .5em;
 }
 
-.header__right {
-  flex: 1 1 60%;
-}
-
-.main-nav {
+.nav {
   display: flex;
   justify-content: space-around;
   padding: 0;
 
   &__link {
-    font-size: 18px;
+    display: inline-block;
+    font-size: 1.2em;
+    width: 100%;
 
     &:hover,
     &:focus {
-      color: $nav-hover;
+      color: $nav-focus-color;
     }
   }
 }
 
-@media (max-width: 767px) {
-  .header--short {
-    min-height: 60px;
+@media (max-width: 992px) {
+  .header--thin {
+    min-height: 3em;
   }
+
   .header--stacked {
+    align-items: flex-start;
     flex-wrap: wrap;
-  }
 
-  .header--short__left {
-    flex-basis: 100%;
-  }
-
-  .main-nav--hidden {
-    /*display: none;*/
+    &__left-part {
+      flex-basis: 100%;
+      padding: .2em 0;
+    }
   }
 }
 
@@ -66,8 +67,35 @@
     display: inline-block;
   }
 
-  .main-nav--stacked {
-    flex-direction: column;
-    align-items: center;
+  .header__left-part {
+    padding-left: .5em;
+    text-align: left;
+  }
+
+  .nav--vertical {
+    flex-wrap: wrap;
+    margin: 0;
+
+    &__item {
+      flex-basis: 100%;
+    }
+  }
+
+  .nav__link {
+    padding: .45em 0;
+    text-align: center;
+
+    &:hover,
+    &:focus {
+      background-color: $nav-vertical-focus-color;
+    }
+  }
+
+  .nav--closed {
+    display: none;
+  }
+
+  .nav--open {
+    display: flex;
   }
 }

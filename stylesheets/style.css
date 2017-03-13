@@ -382,52 +382,66 @@ ul {
 
 .header {
   align-items: center;
-  border: 1px dotted #ffffff;
+  border-bottom: 1px solid #ffffff;
   display: flex;
-  min-height: 120px; }
-
-.header__left {
-  flex: 1 1 40%;
-  text-align: center;
-  margin: 0; }
+  min-height: 8em; }
+  .header__left-part {
+    flex: 1 1 40%;
+    margin: 0;
+    text-align: center; }
+  .header__right-part {
+    flex: 1 1 60%; }
 
 .logo {
   background: url("../images/logotype.png") no-repeat;
   background-position: left center;
-  font-size: 25px;
+  font-size: .8em;
   letter-spacing: 1.1px;
-  padding-left: 50px; }
+  padding-left: 1.8em; }
 
 .toggle-icon {
-  float: right;
   display: none;
-  margin-right: 20px; }
+  float: right;
+  margin-right: .5em; }
 
-.header__right {
-  flex: 1 1 60%; }
-
-.main-nav {
+.nav {
   display: flex;
   justify-content: space-around;
   padding: 0; }
-  .main-nav__link {
-    font-size: 18px; }
-    .main-nav__link:hover, .main-nav__link:focus {
+  .nav__link {
+    display: inline-block;
+    font-size: 1.2em;
+    width: 100%; }
+    .nav__link:hover, .nav__link:focus {
       color: #86a545; }
 
-@media (max-width: 767px) {
-  .header--short {
-    min-height: 60px; }
+@media (max-width: 992px) {
+  .header--thin {
+    min-height: 3em; }
   .header--stacked {
+    align-items: flex-start;
     flex-wrap: wrap; }
-  .header--short__left {
-    flex-basis: 100%; }
-  .main-nav--hidden {
-    /*display: none;*/ } }
+    .header--stacked__left-part {
+      flex-basis: 100%;
+      padding: .2em 0; } }
 
 @media (max-width: 575px) {
   .toggle-icon--visible {
     display: inline-block; }
-  .main-nav--stacked {
-    flex-direction: column;
-    align-items: center; } }
+  .header__left-part {
+    padding-left: .5em;
+    text-align: left; }
+  .nav--vertical {
+    flex-wrap: wrap;
+    margin: 0; }
+    .nav--vertical__item {
+      flex-basis: 100%; }
+  .nav__link {
+    padding: .45em 0;
+    text-align: center; }
+    .nav__link:hover, .nav__link:focus {
+      background-color: #1D1E20; }
+  .nav--closed {
+    display: none; }
+  .nav--open {
+    display: flex; } }

@@ -12,3 +12,9 @@ a {
 ul {
   list-style: none;
 }
+
+.input {
+  background-color: $input-background-color;
+  border: 1px solid lighten(#222327, 5%);
+  color: #979898;
+}

@@ -4,16 +4,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Twoja strona</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="stylesheets/style.css">
   </head>
   <body>
     <header class="header header--thin header--stacked">
-      <h1 class="header__left-part header--stacked__left-part">
+      <h1 class="header__brand header__brand--wide">
         <span class="logo"><a href="#" class="logo__text">Parallels</a></span>
-        <!--TO DO: Dodac aria-hidden do ikony -->
-        <a href="#" class="toggle-icon toggle-icon--visible">III</a>
+        <button type="button" class="button-toggle button-toggle--visible">
+          <i class="fa fa-bars" aria-label="open menu"></i>
+        </button>
       </h1>
-      <nav class="header__right-part">
+      <nav class="header__navbar header__navbar--wide">
         <ul class="nav nav--vertical nav--closed">
           <li class="nav__item nav--vertical__item"><a href="#" class="nav__link">Home</a></li>
           <li class="nav__item nav--vertical__item"><a href="#" class="nav__link">Services</a></li>
@@ -21,6 +23,12 @@
           <li class="nav__item nav--vertical__item"><a href="#" class="nav__link">Pricing</a></li>
           <li class="nav__item nav--vertical__item"><a href="#" class="nav__link">About</a></li>
           <li class="nav__item nav--vertical__item"><a href="#" class="nav__link">Contact</a></li>
+          <form class="nav__form nav__form--hidden">
+            <input type="search" class="input nav__input" placeholder="Search...">
+            <button type="button" class="button-search">
+              <span class="fa fa-search" aria-label="open search input"></span>
+            </button>
+          </form>
         </ul>
       </nav>
     </header>

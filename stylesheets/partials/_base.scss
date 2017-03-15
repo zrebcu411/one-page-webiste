@@ -13,6 +13,14 @@ ul {
   list-style: none;
 }
 
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 1080px;
+}
+
 .input {
   background-color: $input-background-color;
   border: 1px solid lighten(#222327, 5%);

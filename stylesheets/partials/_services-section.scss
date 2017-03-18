@@ -1,0 +1,72 @@
+.services {
+  color: $font-color;
+  border-bottom: 1px solid red;
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+  }
+
+  &__header {
+    color: white;
+    font-size: 2.5rem;
+    font-family: 'Roboto-Thin';
+    text-align: center;
+    flex-basis: 100%;
+    margin: 3rem 0;
+  }
+}
+
+.service {
+  flex-basis: 25%;
+  flex-direction: column;
+  display: flex;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  align-items: center;  
+
+  &__icon {
+    background-origin: content-box;
+    padding: 2.3rem;
+    background-color: $background-secondary;
+    border-radius: 50%;
+    height: 2.3rem;
+    width: 2.3rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: 50%;  
+
+    &--web-design {
+      background-image: url('../images/icon-web-design.png');
+    }  
+
+    &--ui-design {
+      background-image: url('../images/icon-ui-design.png');
+    }  
+
+    &--prototype {
+      background-image: url('../images/icon-prototype.png');
+    }  
+
+    &--photography {
+      background-image: url('../images/icon-photography.png');
+    }
+  }
+
+  &__name {
+    font-family: 'Roboto-Thin';
+    font-size: 1.6rem;
+    margin: 1.6rem 0 0 0; 
+  }
+
+  &__description {
+      font-size: .9rem;
+      text-align: center;
+  }
+}
+
+@media (max-width: 47.94rem) {
+  .service--stacked {
+      flex-basis: 50%;
+  }
+}

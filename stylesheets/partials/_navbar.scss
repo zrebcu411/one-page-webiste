@@ -1,11 +1,11 @@
 .header {
   border-bottom: 1px solid $header-border-color;
-  
+
   &__container {
     align-items: center;
     display: flex;
     justify-content: space-between;
-    min-height: 8rem; 
+    min-height: 8rem;
   }
 
   &__brand {
@@ -21,22 +21,22 @@
     font-size: 1.6rem;
     letter-spacing: 1.1px;
     // margin-bottom: 10px;
-    padding-left: 2.8rem; 
+    padding-left: 2.8rem;
   }
 }
 
 .nav {
-  padding: 0;
   margin: 0;
+  padding: 0;
 
   &__item {
     display: inline-block;
   }
 
   &__link {
-    margin-left: 2rem;
     display: inline-block;
     font-size: 1.1rem;
+    margin-left: 2rem;
     width: 100%;
 
     &:hover,
@@ -46,19 +46,19 @@
   }
 
   &__form {
-    margin-left: 2rem;
     display: inline-block;
+    margin-left: 2rem;
   }
 
   &__input {
     opacity: 0;
     transition: width 0.5s, opacity 1.5s;
-    width: 0px;
+    width: 0;
   }
 
   &__input--visible {
-    width: 10.6rem;
     opacity: 1;
+    width: 10.6rem;
   }
 }
 
@@ -69,8 +69,8 @@
   color: $nav-button-toggle-color;
   display: none;
   float: right;
-  padding: 0 .8rem;
   margin-top: 0.15rem;
+  padding: 0 .8rem;
 }
 
 .button-search {
@@ -79,7 +79,8 @@
   color: $nav-button-search-color;
 }
 
-@media (max-width: 61.94rem /*991px*/) {
+// *****  991px *****
+@media (max-width: 61.94rem) {
   .nav {
     &__link {
       margin-left: 1.3rem;
@@ -91,13 +92,14 @@
   }
 }
 
-@media (max-width: 47.94rem /*767px*/) {
-  .header__container--low {
+// *****  767px  *****
+@media (max-width: 47.94rem) {
+  .header--low {
     min-height: 3rem;
     padding: 0;
   }
 
-  .header__container--stacked {
+  .header--stacked {
     flex-wrap: wrap;
   }
 
@@ -120,19 +122,19 @@
     }
 
     &__link {
-    padding: .45rem 0;
-    text-align: center;
-    margin: 0;
+      margin: 0;
+      padding: .45rem 0;
+      text-align: center;
 
-    &:hover,
-    &:focus {
-      background-color: $nav-vertical-item-focus-color;
+      &:hover,
+      &:focus {
+        background-color: $nav-vertical-item-focus-color;
+      }
     }
   }
-}
 
   .nav--closed {
-    height: 0px;
+    height: 0;
     overflow: hidden;
     transition: height 0.3s ease;
   }

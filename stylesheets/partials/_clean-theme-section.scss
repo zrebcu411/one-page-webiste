@@ -1,0 +1,55 @@
+.clean-theme {
+  background-image: url('../images/baner3.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__container {
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    height: 30rem;
+  }
+
+  &__header {
+    color: $primary-white;
+    flex-basis: 100%;
+    font-size: 4.3rem;
+    font-weight: normal;
+    margin: 0 0 1.5rem;
+  }
+
+  .button--green {
+    margin-right: 1rem;
+  }
+}
+
+@media (max-width: $screen-large) {
+  .clean-theme {
+    &__container {
+      height: 25rem;
+    }
+
+    &__header {
+      font-size: 3rem;
+    }
+  }
+}
+
+@media (max-width: $screen-medium) {
+  .clean-theme {
+    &__container {
+      justify-content: center;
+    }
+
+    &__header {
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    .button--small {
+      padding: 0.3rem;
+      width: 6.2rem;
+    }
+  }
+}

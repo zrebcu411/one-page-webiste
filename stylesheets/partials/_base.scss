@@ -4,7 +4,6 @@ body {
 }
 
 
-
 a {
   color: $font-color;
   text-decoration: none;
@@ -19,11 +18,44 @@ ul {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  max-width: 1080px;
+  max-width: 1050px;
 }
 
 .input {
   background-color: $input-background-color;
   border: 1px solid lighten(#222327, 5%);
   color: #979898;
+}
+
+.button {
+  width: 9.2rem;
+  padding: 0.6rem;
+  color: $font-color;
+  border: none;
+
+  &--rounded {
+    border-radius: 5px;
+    font-size: 1.3rem;
+    border-bottom: 3px solid;
+  }
+
+  &--green {
+    background-color: $button-green-color;
+    border-bottom-color: darken($button-green-color, 15%);
+
+    &:hover,
+    &:focus {
+      background-color: darken($button-green-color, 10%);
+    }
+  }
+
+  &--cyan {
+    background-color: $button-cyan-color;
+    border-bottom-color: darken($button-cyan-color, 15%);
+
+    &:hover,
+    &:focus {
+      background-color: darken($button-cyan-color, 10%);
+    }
+  }
 }

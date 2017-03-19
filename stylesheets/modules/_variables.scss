@@ -1,20 +1,39 @@
 
-$site-background: #292a2e;
-$background-secondary: #323338;
-$font-color: #ffffff;
+// ********************     PALLETE     ********************
+$primary-dark: #292a2e;
+$secondary-dark: #323338; //portfolio, our price
+$third-dark: #222327; // input, footer
+$primary-white: #ffffff;
+$secondary-white: #E4E4E4;
+$celadon: #B0CE3C;
+$cyan: #1BBC9D;
+$pale-turquoise: #74B0A4;
+$olive-drab: #B6C280;
+$graphite: #424242; //skills, client about us, our price button
 
-$header-border-color: #ffffff;
 
-$nav-item-focus-color: #86a545;
-$nav-vertical-item-focus-color: #1d1e20;
-$nav-button-toggle-color: $font-color;
-$nav-button-search-color: $font-color;
+$site-background: $primary-dark;
+$font-color: $primary-white;
 
-$input-background-color: #222327;
+$header-border-color: $secondary-white;
+
+$nav-item-focus-color: $celadon;
+$nav-vertical-item-focus-color: $third-dark;
+$nav-button-toggle-color: $primary-white;
+$nav-button-search-color: $primary-white;
+
+$button-default-color: $secondary-dark;
+$button-green-color: $celadon;
+$button-cyan-color: $cyan;
+$button-turquoise-color: $pale-turquoise;
+$button-white-color: $secondary-white;
+
+$input-background-color: $third-dark;
 
 // ****************** BREAKPOINTS *************************/
 
-$screen-small: 576px;
-$screen-medium: 768px;
-$screen-large: 992px;
-$screen-extra-large: 1200px;
+
+$screen-small: 35.94rem;                    // **  575px  **
+$screen-medium: 47.94rem;                   // **  767px  **
+$screen-large: 61.94rem;                    // **  991px  **
+$screen-extra-large: 74.94rem;              // ** 1199px  **

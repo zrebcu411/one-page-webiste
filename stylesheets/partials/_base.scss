@@ -28,12 +28,25 @@ ul {
 }
 
 .button {
-  width: 9.2rem;
-  padding: 0.6rem;
+  width: 7.5rem;
+  padding: 0.5rem;
   color: $font-color;
   border: none;
+  background-color: $button-default-color;
+
+  &:hover {
+    background-color: darken($button-default-color, 10%);
+  }
+
+  &--active,
+  &--active:hover {
+    background-color: $button-cyan-color;
+    font-family: "Roboto-Bold";
+  }
 
   &--rounded {
+    width: 9.2rem;
+    padding: 0.6rem;
     border-radius: 5px;
     font-size: 1.3rem;
     border-bottom: 3px solid;

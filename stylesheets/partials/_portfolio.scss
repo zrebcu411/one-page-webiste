@@ -18,11 +18,46 @@
     padding: 0;
   }
 
+  &__image-container {
+    position: relative;
+    box-sizing: border-box;
+    width: 25%;
+    height: 25%;
+    padding: 0.5rem;
+  }
+
   &__photo {
     box-sizing: border-box;
     width: 25%;
     height: 25%;
     padding: 0.5rem;
+  }
+
+  &__load-more {
+    text-align: center;
+    margin: 2.6rem 0;
+  }
+}
+
+.load-more {
+  &__text {
+    color: $font-color;
+    font-size: 1.2rem;
+    display: block;
+  }
+
+  &__button {
+    background-color: transparent;
+    border: none;
+  }
+
+  &__icon-down {
+    display: inline-block;
+    width: 3rem;
+    height: 2rem;
+    background-image: url('../images/icon-down.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
   }
 }
 
@@ -46,6 +81,10 @@
     &__photo {
       width: 50%;
       height: 50%;
+    }
+
+    &__load-more {
+      margin: .1rem 0;
     }
   }
 }

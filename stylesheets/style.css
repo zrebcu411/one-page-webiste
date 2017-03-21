@@ -725,3 +725,40 @@ ul {
 @media (max-width: 35.94rem) {
   .portfolio__image-container {
     width: 100%; } }
+
+.pricing-baner {
+  background-image: url("../images/baner1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 80% bottom; }
+  .pricing-baner__container {
+    height: 30rem;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap; }
+  .pricing-baner__title {
+    color: #ffffff;
+    flex-basis: 100%;
+    font-weight: normal;
+    font-size: 4.3rem;
+    margin: 0;
+    line-height: 1; }
+  .pricing-baner__subtitle {
+    font-size: 2.8rem;
+    color: #ffffff;
+    margin: 0;
+    font-family: 'Roboto-Bold'; }
+
+@media (max-width: 61.94rem) {
+  .pricing-baner__container {
+    height: 25rem; }
+  .pricing-baner__title {
+    font-size: 3.5rem; }
+  .pricing-baner__subtitle {
+    font-size: 2rem; } }
+
+@media (max-width: 35.94rem) {
+  .pricing-baner__title {
+    font-size: 2rem; }
+  .pricing-baner__subtitle {
+    font-size: 1.2rem; } }

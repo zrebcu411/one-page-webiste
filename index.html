@@ -1,189 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Twoja strona</title>
-    <link rel="stylesheet" href="icons/css/fontello.css">
-    <link rel="stylesheet" href="stylesheets/style.css">
-  </head>
-  <body>
 
-    <!-- TO DO: hide navbar items and show longer search input -->
-    <!-- **************************        header        ************************** -->
-    <header class="header">
-      <div class="container header__container header--low header--stacked">
-        <h1 class="header__brand header__brand--wide">
-          <span class="logo"><a href="#" class="logo__text">Parallels</a></span>
-          <button type="button" class="button-toggle button-toggle--visible">
-            <span class="icon-youtubemenu" aria-label="open menu"></span>
-          </button>
-        </h1>
-        <nav class="header__navbar header__navbar--wide">
-          <ul class="nav nav--closed">
-            <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Services</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Portfolio</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Pricing</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">About</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
-            <form class="nav__form nav__form--hidden">
-              <input type="search" class="input nav__input">
-              <button type="button" class="button-search">
-                <span class="icon-youtubesearch" aria-label="open search input"></span>
-              </button>
-            </form>
-          </ul>
-        </nav>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Twoja strona</title>
+  <link rel="stylesheet" href="icons/css/fontello.css">
+  <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+  
+<body>
+  <!-- TO DO: hide navbar items and show longer search input -->
+  <!-- **************************        header        ************************** -->
+  <header class="header">
+    <div class="container header__container header--low header--stacked">
+      <h1 class="header__brand header__brand--wide">
+        <span class="logo"><a href="#" class="logo__text">Parallels</a></span>
+        <button type="button" class="button-toggle button-toggle--visible">
+          <span class="icon-youtubemenu" aria-label="open menu"></span>
+        </button>
+      </h1>
+      <nav class="header__navbar header__navbar--wide">
+        <ul class="nav nav--closed">
+          <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Services</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Portfolio</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Pricing</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+          <form class="nav__form nav__form--hidden">
+            <input type="search" class="input nav__input">
+            <button type="button" class="button-search">
+              <span class="icon-youtubesearch" aria-label="open search input"></span>
+            </button>
+          </form>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div style="height: 670px; border-bottom: 1px solid white;"></div>
+
+  <!-- **************************   services section   ************************** -->
+  <section class="services">
+    <div class="container services__container">
+      <h2 class="services__header">Our Services</h1>
+      <div class="service service--stacked">
+        <span class="service__icon service__icon--web-design" aria-hidden="true"></span>
+        <h3 class="service__name">WebDesign</h3>
+        <p class="service__description">Incididunt ea excepteur ad culpa sit. Aliqua aliqua fugiat ea nisi incididunt laborum elit ex irure deserunt esse.</p>
       </div>
-    </header>
+      <div class="service service--stacked">
+        <span class="service__icon service__icon--ui-design" aria-hidden="true"></span>
+        <h3 class="service__name">UIDesign</h3>
+        <p class="service__description">Aliquip officia labore do culpa proident.Enim reprehenderit culpa occaecat culpa dolor fugiat consequat consequat aute nulla.</p>
+      </div>
+      <div class="service service--stacked">
+        <span class="service__icon service__icon--prototype" aria-hidden="true"></span>
+        <h3 class="service__name">Prototype</h3>
+        <p class="service__description">Duis ea nulla occaecat dolore incididunt. Culpa eu minim commodo duis.</p>
+      </div>
+      <div class="service service--stacked">
+        <span class="service__icon service__icon--photography" aria-hidden="true"></span>
+        <h3 class="service__name">Photography</h3>
+        <p class="service__description">Nostrud minim officia nulla ut adipisicing ea proident. Duis ea nulla occaecat dolore incididunt.</p>
+      </div>
+    </div>
+  </section>
 
-    <div style="height: 670px; border-bottom: 1px solid white;"></div>
+  <!-- **************************  clean theme section  ************************** -->
+  <section class="clean-theme">
+    <div class="container clean-theme__container">
+      <h2 class="clean-theme__header">Do you like this clean theme?</h2>
+      <button type="button" class="button button--small button--rounded button--green">Purchase</button>
+      <button type="button" class="button button--small button--rounded button--cyan">Follow</button>
+    </div>
+  </section>
 
-    <!-- **************************   services section   ************************** -->
-    <section class="services">
-      <div class="container services__container">
-        <h2 class="services__header">Our Services</h1>
-        <div class="service service--stacked">
-          <span class="service__icon service__icon--web-design" aria-hidden="true"></span>
-          <h3 class="service__name">WebDesign</h3>
-          <p class="service__description">Incididunt ea excepteur ad culpa sit. Aliqua aliqua fugiat ea nisi incididunt laborum elit ex irure deserunt esse.</p>
+  <!-- **************************       portfolio       ************************** -->
+  <section class="portfolio">
+    <div class="container">
+      <h2 class="portfolio__title">Portfolio</h2>
+      <nav class="portfolio__buttons">
+        <button type="button" class="button button--small">Web-design</button>
+        <button type="button" class="button button--small">UI Design</button>
+        <button type="button" class="button button--small">Prototype</button>
+        <button type="button" class="button button--small button--active">Photography</button>
+      </nav>
+      <div class="container portfolio__photos-container portfolio__photos">
+        <div class="portfolio__image-container">
+          <img src="images/portfolio_1.jpg" alt="portfolio photo" class="portfolio__photo">
+          <div class="portfolio__photo-after">
+            <span class="photo-after__title">Time to relax</span>
+            <span class="photo-after__category">photography</span>
+            <span class="photo-after__stats">
+              <span class="icon-youtubecomment">10</span>
+              <span class="icon-youtubeheart-empty">223</span>
+            </span>
+          </div>
         </div>
-        <div class="service service--stacked">
-          <span class="service__icon service__icon--ui-design" aria-hidden="true"></span>
-          <h3 class="service__name">UIDesign</h3>
-          <p class="service__description">Aliquip officia labore do culpa proident.Enim reprehenderit culpa occaecat culpa dolor fugiat consequat consequat aute nulla.</p>
+        <div class="portfolio__image-container">
+          <img src="images/portfolio_2.jpg" alt="portfolio photo" class="portfolio__photo">
+          <div class="portfolio__photo-after">
+            <span class="photo-after__title">Sad girl</span>
+            <span class="photo-after__category">photography</span>
+            <span class="photo-after__stats">
+              <span class="icon-youtubecomment">2</span>
+              <span class="icon-youtubeheart-empty">5</span>
+            </span>
+          </div>
         </div>
-        <div class="service service--stacked">
-          <span class="service__icon service__icon--prototype" aria-hidden="true"></span>
-          <h3 class="service__name">Prototype</h3>
-          <p class="service__description">Duis ea nulla occaecat dolore incididunt. Culpa eu minim commodo duis.</p>
+        <div class="portfolio__image-container">
+          <img src="images/portfolio_3.jpg" alt="portfolio photo" class="portfolio__photo">
+          <div class="portfolio__photo-after">
+            <span class="photo-after__title">Little boy</span>
+            <span class="photo-after__category">photography</span>
+            <span class="photo-after__stats">
+              <span class="icon-youtubecomment">76</span>
+              <span class="icon-youtubeheart-empty">554</span>
+            </span>
+          </div>
         </div>
-        <div class="service service--stacked">
-          <span class="service__icon service__icon--photography" aria-hidden="true"></span>
-          <h3 class="service__name">Photography</h3>
-          <p class="service__description">Nostrud minim officia nulla ut adipisicing ea proident. Duis ea nulla occaecat dolore incididunt.</p>
+        <div class="portfolio__image-container">
+          <img src="images/portfolio_4.jpg" alt="portfolio photo" class="portfolio__photo">
+          <div class="portfolio__photo-after">
+            <span class="photo-after__title">Beautiful girl</span>
+            <span class="photo-after__category">photography</span>
+            <span class="photo-after__stats">
+              <span class="icon-youtubecomment">19</span>
+              <span class="icon-youtubeheart-empty">871</span>
+            </span>
+          </div>
+        </div>
+        <div class="portfolio__image-container">
+          <img src="images/portfolio_5.jpg" alt="portfolio photo" class="portfolio__photo">
+          <div class="portfolio__photo-after">
+            <span class="photo-after__title">Sweet childrens</span>
+            <span class="photo-after__category">photography</span>
+            <span class="photo-after__stats">
+              <span class="icon-youtubecomment">8</span>
+              <span class="icon-youtubeheart-empty">41</span>
+            </span>
+          </div>
+        </div>
+        <div class="portfolio__image-container">
+          <img src="images/portfolio_6.jpg" alt="portfolio photo" class="portfolio__photo">
+          <div class="portfolio__photo-after">
+            <span class="photo-after__title">Country boy</span>
+            <span class="photo-after__category">photography</span>
+            <span class="photo-after__stats">
+              <span class="icon-youtubecomment">12</span>
+              <span class="icon-youtubeheart-empty">43</span>
+            </span>
+          </div>
+        </div>
+        <div class="portfolio__image-container">
+          <img src="images/portfolio_7.jpg" alt="portfolio photo" class="portfolio__photo">
+          <div class="portfolio__photo-after">
+            <span class="photo-after__title">Holidays</span>
+            <span class="photo-after__category">photography</span>
+            <span class="photo-after__stats">
+              <span class="icon-youtubecomment">9</span>
+              <span class="icon-youtubeheart-empty">18</span>
+            </span>
+          </div>
+        </div>
+        <div class="portfolio__image-container">
+          <img src="images/portfolio_8.jpg" alt="portfolio photo" class="portfolio__photo">
+          <div class="portfolio__photo-after">
+            <span class="photo-after__title">American hero</span>
+            <span class="photo-after__category">photography</span>
+            <span class="photo-after__stats">
+              <span class="icon-youtubecomment">1</span>
+              <span class="icon-youtubeheart-empty">13</span>
+            </span>
+          </div>
         </div>
       </div>
-    </section>
-
-    <!-- **************************  clean theme section  ************************** -->
-    <section class="clean-theme">
-      <div class="container clean-theme__container">
-        <h2 class="clean-theme__header">Do you like this clean theme?</h2>
-        <button type="button" class="button button--small button--rounded button--green">Purchase</button>
-        <button type="button" class="button button--small button--rounded button--cyan">Follow</button>
+      <div class="portfolio__load-more">
+        <span class="load-more__text">Load more</span>
+        <button type="button" class="load-more__button">
+          <span class="load-more__icon-down" aria-label="load more images"></span>
+        </button>
       </div>
-    </section>
+    </div>
+  </section>
 
-     <!-- *************************       portfolio       ************************** -->
-     <section class="portfolio">
-       <div class="container">
-         <h2 class="portfolio__title">Portfolio</h2>
-         <nav class="portfolio__buttons">
-           <button type="button" class="button button--small">Web-design</button>
-           <button type="button" class="button button--small">UI Design</button>
-           <button type="button" class="button button--small">Prototype</button>
-           <button type="button" class="button button--small button--active">Photography</button>
-         </nav>
-         <div class="container portfolio__photos-container portfolio__photos">
-           <div class="portfolio__image-container">
-             <img src="images/portfolio_1.jpg" alt="portfolio photo" class="portfolio__photo">
-             <div class="portfolio__photo-after">
-               <span class="photo-after__title">Time to relax</span>
-               <span class="photo-after__category">photography</span>
-               <span class="photo-after__stats">
-                 <span class="icon-youtubecomment">10</span>
-                 <span class="icon-youtubeheart-empty">223</span>
-               </span>
-             </div>
-           </div>
-           <div class="portfolio__image-container">
-             <img src="images/portfolio_2.jpg" alt="portfolio photo" class="portfolio__photo">
-             <div class="portfolio__photo-after">
-               <span class="photo-after__title">Sad girl</span>
-               <span class="photo-after__category">photography</span>
-               <span class="photo-after__stats">
-                 <span class="icon-youtubecomment">2</span>
-                 <span class="icon-youtubeheart-empty">5</span>
-               </span>
-             </div>
-           </div>
-           <div class="portfolio__image-container">
-             <img src="images/portfolio_3.jpg" alt="portfolio photo" class="portfolio__photo">
-             <div class="portfolio__photo-after">
-               <span class="photo-after__title">Little boy</span>
-               <span class="photo-after__category">photography</span>
-               <span class="photo-after__stats">
-                 <span class="icon-youtubecomment">76</span>
-                 <span class="icon-youtubeheart-empty">554</span>
-               </span>
-             </div>
-           </div>
-           <div class="portfolio__image-container">
-             <img src="images/portfolio_4.jpg" alt="portfolio photo" class="portfolio__photo">
-             <div class="portfolio__photo-after">
-               <span class="photo-after__title">Beautiful girl</span>
-               <span class="photo-after__category">photography</span>
-               <span class="photo-after__stats">
-                 <span class="icon-youtubecomment">19</span>
-                 <span class="icon-youtubeheart-empty">871</span>
-               </span>
-             </div>
-           </div>
-           <div class="portfolio__image-container">
-             <img src="images/portfolio_5.jpg" alt="portfolio photo" class="portfolio__photo">
-             <div class="portfolio__photo-after">
-               <span class="photo-after__title">Sweet childrens</span>
-               <span class="photo-after__category">photography</span>
-               <span class="photo-after__stats">
-                 <span class="icon-youtubecomment">8</span>
-                 <span class="icon-youtubeheart-empty">41</span>
-               </span>
-             </div>
-           </div>
-           <div class="portfolio__image-container">
-             <img src="images/portfolio_6.jpg" alt="portfolio photo" class="portfolio__photo">
-             <div class="portfolio__photo-after">
-               <span class="photo-after__title">Country boy</span>
-               <span class="photo-after__category">photography</span>
-               <span class="photo-after__stats">
-                 <span class="icon-youtubecomment">12</span>
-                 <span class="icon-youtubeheart-empty">43</span>
-               </span>
-             </div>
-           </div>
-           <div class="portfolio__image-container">
-             <img src="images/portfolio_7.jpg" alt="portfolio photo" class="portfolio__photo">
-             <div class="portfolio__photo-after">
-               <span class="photo-after__title">Holidays</span>
-               <span class="photo-after__category">photography</span>
-               <span class="photo-after__stats">
-                 <span class="icon-youtubecomment">9</span>
-                 <span class="icon-youtubeheart-empty">18</span>
-               </span>
-             </div>
-           </div>
-           <div class="portfolio__image-container">
-             <img src="images/portfolio_8.jpg" alt="portfolio photo" class="portfolio__photo">
-             <div class="portfolio__photo-after">
-               <span class="photo-after__title">American hero</span>
-               <span class="photo-after__category">photography</span>
-               <span class="photo-after__stats">
-                 <span class="icon-youtubecomment">1</span>
-                 <span class="icon-youtubeheart-empty">13</span>
-               </span>
-             </div>
-           </div>
-         </div>
-         <div class="portfolio__load-more">
-           <span class="load-more__text">Load more</span>
-           <button type="button" class="load-more__button">
-             <span class="load-more__icon-down" aria-label="load more images"></span>
-           </button>
-         </div>
-       </div>
-     </section>
-  </body>
-  <script src="js/scripts.js"></script>
+  <!-- **************************     pricing table     ************************** -->
+  <section class="pricing-baner">
+    <div class="container pricing-baner__container">
+      <h2 class="pricing-baner__title">Pricing table</h2>
+      <p class="pricing-baner__subtitle">Clean beautiful flat table</p>
+    </div>          
+  </section>
+</body>
+
+<script src="js/scripts.js"></script>
+
 </html>

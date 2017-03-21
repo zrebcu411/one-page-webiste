@@ -398,9 +398,9 @@ ul {
 .container {
   margin-left: auto;
   margin-right: auto;
+  max-width: 1050px;
   padding-left: 15px;
-  padding-right: 15px;
-  max-width: 1050px; }
+  padding-right: 15px; }
 
 .input {
   background-color: #222327;
@@ -408,35 +408,35 @@ ul {
   color: #979898; }
 
 .button {
-  width: 7.5rem;
-  padding: 0.5rem;
-  color: #ffffff;
+  background-color: #323338;
   border: none;
-  background-color: #323338; }
+  color: #ffffff;
+  padding: 0.5rem;
+  width: 7.5rem; }
   .button:hover {
     background-color: #1a1a1d; }
   .button--active, .button--active:hover {
-    background-color: #1BBC9D;
+    background-color: #1bbc9d;
     font-family: "Roboto-Bold"; }
   .button--rounded {
-    width: 9.2rem;
-    padding: 0.6rem;
+    border-bottom: 3px solid;
     border-radius: 5px;
     font-size: 1.3rem;
-    border-bottom: 3px solid; }
+    padding: 0.6rem;
+    width: 9.2rem; }
   .button--green {
-    background-color: #B0CE3C;
+    background-color: #b0ce3c;
     border-bottom-color: #809726; }
     .button--green:hover, .button--green:focus {
       background-color: #91ac2b; }
   .button--cyan {
-    background-color: #1BBC9D;
+    background-color: #1bbc9d;
     border-bottom-color: #117965; }
     .button--cyan:hover, .button--cyan:focus {
       background-color: #158f78; }
 
 .header {
-  border-bottom: 1px solid #E4E4E4; }
+  border-bottom: 1px solid #e4e4e4; }
   .header__container {
     align-items: center;
     display: flex;
@@ -468,7 +468,7 @@ ul {
     margin-left: 2rem;
     width: 100%; }
     .nav__link:hover, .nav__link:focus {
-      color: #B0CE3C; }
+      color: #b0ce3c; }
   .nav__form {
     display: inline-block;
     margin-left: 2rem; }
@@ -655,7 +655,7 @@ ul {
 
 .portfolio__photo-after {
   align-content: center;
-  background-color: black;
+  background-color: #222327;
   color: #ffffff;
   display: flex;
   flex-wrap: wrap;
@@ -725,3 +725,40 @@ ul {
 @media (max-width: 35.94rem) {
   .portfolio__image-container {
     width: 100%; } }
+
+.pricing-baner {
+  background-image: url("../images/baner1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 80% bottom; }
+  .pricing-baner__container {
+    height: 30rem;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap; }
+  .pricing-baner__title {
+    color: #ffffff;
+    flex-basis: 100%;
+    font-weight: normal;
+    font-size: 4.3rem;
+    margin: 0;
+    line-height: 1; }
+  .pricing-baner__subtitle {
+    font-size: 2.8rem;
+    color: #ffffff;
+    margin: 0;
+    font-family: 'Roboto-Bold'; }
+
+@media (max-width: 61.94rem) {
+  .pricing-baner__container {
+    height: 25rem; }
+  .pricing-baner__title {
+    font-size: 3.5rem; }
+  .pricing-baner__subtitle {
+    font-size: 2rem; } }
+
+@media (max-width: 35.94rem) {
+  .pricing-baner__title {
+    font-size: 2rem; }
+  .pricing-baner__subtitle {
+    font-size: 1.2rem; } }

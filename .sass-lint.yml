@@ -50,6 +50,10 @@ rules:
     - 1
     -
       allow-leading-underscore: false
+  class-name-format:
+    - 1
+    -
+      convention: hyphenatedbem
 
   # Style Guide
   border-zero: 0

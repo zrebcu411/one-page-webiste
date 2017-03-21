@@ -16,9 +16,9 @@ ul {
 .container {
   margin-left: auto;
   margin-right: auto;
+  max-width: 1050px;
   padding-left: 15px;
   padding-right: 15px;
-  max-width: 1050px;
 }
 
 .input {
@@ -28,11 +28,11 @@ ul {
 }
 
 .button {
-  width: 7.5rem;
-  padding: 0.5rem;
-  color: $font-color;
-  border: none;
   background-color: $button-default-color;
+  border: none;
+  color: $font-color;
+  padding: 0.5rem;
+  width: 7.5rem;
 
   &:hover {
     background-color: darken($button-default-color, 10%);
@@ -45,11 +45,11 @@ ul {
   }
 
   &--rounded {
-    width: 9.2rem;
-    padding: 0.6rem;
+    border-bottom: 3px solid;
     border-radius: 5px;
     font-size: 1.3rem;
-    border-bottom: 3px solid;
+    padding: 0.6rem;
+    width: 9.2rem;
   }
 
   &--green {

@@ -629,14 +629,14 @@ ul {
 
 .portfolio__title {
   color: #ffffff;
-  font-weight: normal;
   font-size: 2.5rem;
-  text-align: center;
-  margin: 3.8rem 0 0.6rem 0; }
+  font-weight: normal;
+  margin: 3.8rem 0 .6rem;
+  text-align: center; }
 
 .portfolio__buttons {
-  text-align: center;
-  margin-bottom: 2.7rem; }
+  margin-bottom: 2.7rem;
+  text-align: center; }
 
 .portfolio__photos-container {
   display: flex;
@@ -644,68 +644,68 @@ ul {
   padding: 0; }
 
 .portfolio__image-container {
-  position: relative;
   box-sizing: border-box;
-  width: 25%;
-  padding: 0.5rem; }
+  padding: 0.5rem;
+  position: relative;
+  width: 25%; }
 
 .portfolio__photo {
   vertical-align: top;
   width: 100%; }
 
 .portfolio__photo-after {
-  display: flex;
   align-content: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  position: absolute;
   background-color: black;
-  z-index: 1;
-  width: 74%;
-  height: 74%;
-  top: 13%;
-  left: 13%;
   color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  height: 74%;
+  justify-content: center;
+  left: 13%;
   opacity: 0;
+  position: absolute;
   text-align: center;
-  transition: opacity 0.5s; }
+  top: 13%;
+  transition: opacity 0.5s;
+  width: 74%;
+  z-index: 1; }
   .portfolio__photo-after:hover {
     opacity: 0.8; }
 
 .portfolio .photo-after__title {
   font-family: 'Roboto-Bold';
-  font-weight: normal;
   font-size: 1.3rem;
-  width: 100%;
-  line-height: 1.4rem; }
+  font-weight: normal;
+  line-height: 1.4rem;
+  width: 100%; }
 
 .portfolio .photo-after__category {
-  width: 100%;
-  margin: 2% 0 15%; }
+  margin: 2% 0 15%;
+  width: 100%; }
 
 .portfolio .photo-after__stats {
   font-size: 1.4rem; }
 
 .portfolio__load-more {
-  text-align: center;
-  margin: 2.6rem 0; }
+  margin: 2.6rem 0;
+  text-align: center; }
 
 .load-more__text {
   color: #ffffff;
-  font-size: 1.2rem;
-  display: block; }
+  display: block;
+  font-size: 1.2rem; }
 
 .load-more__button {
   background-color: transparent;
   border: none; }
 
 .load-more__icon-down {
-  display: inline-block;
-  width: 3rem;
-  height: 2rem;
   background-image: url("../images/icon-down.png");
+  background-position: 50% 50%;
   background-repeat: no-repeat;
-  background-position: 50% 50%; }
+  display: inline-block;
+  height: 2rem;
+  width: 3rem; }
 
 @media (max-width: 47.94rem) {
   .portfolio__title {
@@ -715,8 +715,8 @@ ul {
     margin-bottom: 1rem; }
   .portfolio .button--small {
     display: block;
-    width: 40%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    width: 40%; }
   .portfolio__image-container {
     width: 50%; }
   .portfolio__load-more {

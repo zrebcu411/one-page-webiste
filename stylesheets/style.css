@@ -393,7 +393,12 @@ a {
   text-decoration: none; }
 
 ul {
-  list-style: none; }
+  list-style: none;
+  padding: 0; }
+
+strong {
+  font-family: 'Roboto-Bold';
+  font-weight: normal; }
 
 .container {
   margin-left: auto;
@@ -762,3 +767,62 @@ ul {
     font-size: 2rem; }
   .pricing-baner__subtitle {
     font-size: 1.2rem; } }
+
+.our-price__title {
+  flex-basis: 100%; }
+
+.our-price__row {
+  display: flex;
+  flex-wrap: wrap; }
+
+.price-box {
+  box-sizing: border-box;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  text-align: center; }
+  .price-box--dark {
+    background-color: #323338;
+    color: #e4e4e4; }
+  .price-box--light {
+    background-color: #ffffff;
+    color: #292a2e; }
+  .price-box--wider {
+    flex-grow: 1;
+    max-width: 33.3333%; }
+    .price-box--wider:not(:first-child) {
+      margin-left: 7%; }
+  .price-box--shorter {
+    flex-grow: 1;
+    max-width: 25%; }
+    .price-box--shorter:not(:first-child) {
+      margin-left: 3%; }
+  .price-box__title {
+    font-family: 'Roboto-Thin';
+    font-weight: normal;
+    font-size: 1.5rem; }
+  .price-box__price {
+    padding: 1rem 0;
+    border-bottom: 3px solid;
+    font-family: 'Roboto-Bold';
+    font-weight: bold;
+    color: white; }
+    .price-box__price--cyan {
+      background-color: #1bbc9d;
+      border-color: #158f78; }
+    .price-box__price--graphite {
+      background-color: #424242;
+      border-color: #1c1c1c; }
+    .price-box__price--turquoise {
+      background-color: #74b0a4;
+      border-color: #4e897e; }
+    .price-box__price--olive {
+      background-color: #b6c280;
+      border-color: #879547; }
+    .price-box__price--white {
+      background-color: #e4e4e4;
+      border-color: #b1b1b1; }
+  .price-box__features {
+    font-size: 1.2rem; }
+  .price-box__feature {
+    padding: .5rem 0; }

@@ -1,27 +1,30 @@
 .our-price {
-  &__container {
-    // display: flex;
-    // flex-wrap: wrap;
-  }
-
   &__title {
-    flex-basis: 100%;
+    color: $font-color;
+    font-family: 'Roboto-Light';
+    font-size: 2.5rem;
+    font-weight: normal;
+    margin: 2.5rem;
+    text-align: center;
   }
 
   &__row {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 5rem;
   }
 }
 
 .price-box {
-  box-sizing: border-box;
+  align-items: center;
   border-radius: 5px;
+  box-sizing: border-box;
   display: flex;
+  flex: 1;
   flex-direction: column;
+  padding-bottom: 1rem;
   text-align: center;
-  // justify-content: center;
-  // flex-wrap: wrap;
 
   &--dark {
     background-color: $secondary-dark;
@@ -30,40 +33,38 @@
 
   &--light {
     background-color: $primary-white;
-    color: $primary-dark;
+    color: $secondary-dark;
   }
 
   &--wider {
-    flex-grow: 1;
-    max-width: 33.3333%;
-
-    &:not(:first-child) {
+    &:nth-child(n+2) {
       margin-left: 7%;
     }
   }
 
   &--shorter {
-    flex-grow: 1;
-    max-width: 25%;
-
-    &:not(:first-child) {
+    &:nth-child(n+2) {
       margin-left: 3%;
     }
   }
 
   &__title {
-    font-family: 'Roboto-Thin';
-    font-weight: normal;
+    font-family: 'Roboto-Light';
     font-size: 1.5rem;
+    font-weight: normal;
+    margin: 2rem 0;
   }
 
   &__price {
-    padding: 1rem 0;
     border-bottom: 3px solid;
+    color: $font-color;
     font-family: 'Roboto-Bold';
     font-weight: bold;
-    color: white;
-    
+    letter-spacing: 2px;
+    margin: 0;
+    padding: 1rem 0;
+    width: 100%;
+
     &--cyan {
       background-color: $cyan;
       border-color: darken($cyan, 10%);
@@ -87,15 +88,71 @@
     &--white {
       background-color: $secondary-white;
       border-color: darken($secondary-white, 20%);
+      color: $pale-turquoise;
     }
   }
 
   &__features {
     font-size: 1.2rem;
+    letter-spacing: 1px;
+    margin: 2rem 0 2.5rem;
   }
 
   &__feature {
     padding: .5rem 0;
+  }
+}
+
+@media (max-width: $screen-large) {
+  .our-price {
+    &__row {
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  .price-box {
+    flex-grow: 0;
+
+    &--wider:nth-child(n) {
+      flex-basis: calc(33.333% - 7%);
+    }
+
+    &--shorter:nth-child(n) {
+      flex-basis: 40%;
+      margin: 0 0 6%;
+    }
+
+    &--shorter:nth-child(even) {
+      margin-left: 6%;
+    }
+
+    &__title {
+      margin: 1.5rem 0;
+    }
+
+    &__features {
+      margin: 1rem 0;
+    }
+  }
+}
+
+@media (max-width: $screen-small) {
+  .our-price {
+    &__title {
+      margin: 1.5rem 0;
+    }
+
+    &__row {
+      margin: 0;
+    }
+  }
+
+  .price-box {
+    &--wider:nth-child(n),
+    &--shorter:nth-child(n) {
+      flex-basis: 80%;
+      margin: 0 0 2rem;
+    }
   }
 }
 

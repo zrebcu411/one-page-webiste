@@ -51,7 +51,7 @@ strong {
   }
 
   &--rounded {
-    border-bottom: 3px solid;
+    border-bottom: 4px solid;
     border-radius: 5px;
     font-size: 1.3rem;
     padding: 0.6rem;
@@ -75,6 +75,47 @@ strong {
     &:hover,
     &:focus {
       background-color: darken($button-cyan-color, 10%);
+    }
+  }
+
+  &--white {
+    background-color: $secondary-white;
+    border-bottom-color: darken($secondary-white, 15%);
+    color: $primary-dark;
+
+    &:hover,
+    &:focus {
+      background-color: darken($secondary-white, 10%);
+    }
+  }
+
+   &--turquoise {
+    background-color: $button-turquoise-color;
+    border-bottom-color: darken($button-turquoise-color, 15%);
+
+    &:hover,
+    &:focus {
+      background-color: darken($button-turquoise-color, 10%);
+    }
+  }
+
+   &--olive {
+    background-color: $button-olive-color;
+    border-bottom-color: darken($button-olive-color, 15%);
+
+    &:hover,
+    &:focus {
+      background-color: darken($button-olive-color, 10%);
+    }
+  }
+
+   &--graphite {
+    background-color: $button-graphite-color;
+    border-bottom-color: darken($button-graphite-color, 15%);
+
+    &:hover,
+    &:focus {
+      background-color: darken($button-graphite-color, 10%);
     }
   }
 }

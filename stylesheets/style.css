@@ -622,7 +622,7 @@ blockquote {
     margin: 1.5rem 0; } }
 
 .clean-theme {
-  background-image: url("../images/baner3.jpg");
+  background-image: url("../images/boja.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -756,10 +756,10 @@ blockquote {
     width: 100%; } }
 
 .pricing-baner {
-  background-image: url("../images/baner1.jpg");
+  background-image: url("../images/car.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 80% bottom; }
+  background-position: 40% bottom; }
   .pricing-baner__container {
     height: 30rem;
     display: flex;
@@ -942,3 +942,40 @@ blockquote {
     padding: 0; }
   .testimonial__author {
     margin-bottom: 1.5rem; } }
+
+.our-team {
+  background-image: url("../images/metro.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 25% bottom; }
+  .our-team__container {
+    height: 30rem;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap; }
+  .our-team__title {
+    color: #ffffff;
+    flex-basis: 100%;
+    font-weight: normal;
+    font-size: 4.3rem;
+    margin: 0;
+    line-height: 1; }
+  .our-team__subtitle {
+    font-size: 2.8rem;
+    color: #ffffff;
+    margin: 0;
+    font-family: 'Roboto-Bold'; }
+
+@media (max-width: 61.94rem) {
+  .our-team__container {
+    height: 25rem; }
+  .our-team__title {
+    font-size: 3.5rem; }
+  .our-team__subtitle {
+    font-size: 2rem; } }
+
+@media (max-width: 35.94rem) {
+  .our-team__title {
+    font-size: 2rem; }
+  .our-team__subtitle {
+    font-size: 1.2rem; } }

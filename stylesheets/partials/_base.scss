@@ -19,6 +19,10 @@ strong {
   font-weight: normal;
 }
 
+blockquote {
+  margin: 0;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -89,7 +93,7 @@ strong {
     }
   }
 
-   &--turquoise {
+  &--turquoise {
     background-color: $button-turquoise-color;
     border-bottom-color: darken($button-turquoise-color, 15%);
 
@@ -99,7 +103,7 @@ strong {
     }
   }
 
-   &--olive {
+  &--olive {
     background-color: $button-olive-color;
     border-bottom-color: darken($button-olive-color, 15%);
 
@@ -109,7 +113,7 @@ strong {
     }
   }
 
-   &--graphite {
+  &--graphite {
     background-color: $button-graphite-color;
     border-bottom-color: darken($button-graphite-color, 15%);
 

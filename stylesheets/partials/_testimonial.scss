@@ -1,0 +1,75 @@
+.testimonial {
+  &__title {
+    align-items: center;
+    color: $font-color;
+    display: flex;
+    font-family: 'Roboto-Bold';
+    font-size: 1.3rem;
+    font-weight: normal;
+    justify-content: center;
+    margin: 0 0 2.5rem;
+    text-align: center;
+    text-transform: uppercase;
+
+    &::before,
+    &::after {
+      border-bottom: 2px solid $graphite;
+      content: "";
+      display: inline-block;
+      flex: 1;
+    }
+
+    &::before {
+      margin-right: 5%;
+    }
+
+    &::after {
+      margin-left: 5%;
+    }
+  }
+
+  &__text {
+    background-image: url('../images/quote-left.png'),
+                      url('../images/quote-right.png');
+    background-position: left center, right center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 5rem, 5rem;
+    color: lighten($graphite, 20%);
+    font-family: 'Roboto-Normal';
+    font-size: .9rem;
+    line-height: 1.4rem;
+    margin: 0 auto 1.5rem;
+    max-width: 28rem;
+    padding: 0 8rem;
+    text-align: center;
+    word-spacing: 0.2rem;
+  }
+
+  &__author {
+    color: $celadon;
+    display: block;
+    font-family: 'Roboto-Bold';
+    font-size: 0.95rem;
+    font-style: normal;
+    margin-bottom: 4rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+@media (max-width: $screen-medium) {
+  .testimonial {
+    &__title {
+      margin: 0 0 1.5rem;
+    }
+
+    &__text {
+      background-image: none;
+      padding: 0;
+    }
+
+    &__author {
+      margin-bottom: 1.5rem;
+    }
+  }
+}

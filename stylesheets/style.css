@@ -603,7 +603,9 @@ blockquote {
     margin: 1.6rem 0 0; }
   .service__description {
     font-size: .9rem;
-    text-align: center; }
+    text-align: center;
+    color: #A2A2A2;
+    font-family: 'Roboto-Normal'; }
 
 @media (max-width: 47.94rem) {
   .services__container {
@@ -979,3 +981,50 @@ blockquote {
     font-size: 2rem; }
   .our-team__subtitle {
     font-size: 1.2rem; } }
+
+.about-us {
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 3rem; }
+  .about-us__container {
+    display: flex;
+    flex-wrap: wrap; }
+  .about-us__title {
+    width: 100%;
+    font-size: 2.5rem;
+    font-family: 'Roboto-Light';
+    font-weight: normal;
+    margin: 3rem 0; }
+
+.person {
+  width: 25%;
+  padding: 0.6rem;
+  box-sizing: border-box; }
+  .person__photo {
+    width: 100%; }
+  .person__name {
+    font-size: 1.5rem;
+    margin: 1rem 0 0;
+    font-family: 'Roboto-Normal';
+    line-height: 1.2;
+    font-weight: normal; }
+  .person__position {
+    margin: 0 0 .7rem;
+    font-family: 'Roboto-Normal'; }
+  .person__description {
+    color: #A2A2A2;
+    font-family: 'Roboto-Normal';
+    font-size: .95rem; }
+
+@media (max-width: 47.94rem) {
+  .about-us {
+    margin: 0; }
+    .about-us__title {
+      font-size: 2rem;
+      margin: 1.5rem 0; }
+  .person {
+    width: 50%; } }
+
+@media (max-width: 35.94rem) {
+  .person {
+    width: 100%; } }

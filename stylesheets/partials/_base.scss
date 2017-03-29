@@ -23,6 +23,18 @@ blockquote {
   margin: 0;
 }
 
+.sr-only {
+  border: 0;
+  clip: rect(0, 0 , 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -34,7 +46,7 @@ blockquote {
 .input {
   background-color: $input-background-color;
   border: 1px solid lighten(#222327, 5%);
-  color: #979898;
+  color: $secondary-font-color;
 }
 
 .button {

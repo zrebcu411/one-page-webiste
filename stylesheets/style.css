@@ -1184,3 +1184,43 @@ blockquote {
     margin: 0; }
   .more-info__address {
     margin-bottom: 1rem; } }
+
+.socials {
+  background-image: url("../images/yellow-man.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% top; }
+  .socials__container {
+    height: 30rem;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap; }
+  .socials__title {
+    color: #ffffff;
+    flex-basis: 100%;
+    font-weight: normal;
+    font-size: 3.5rem;
+    margin: 0;
+    line-height: 1;
+    text-transform: uppercase;
+    font-family: 'Roboto-Bold'; }
+  .socials__subtitle {
+    font-size: 3.5rem;
+    color: #ffffff;
+    margin: 0;
+    font-family: 'Roboto-Light';
+    flex-basis: 100%; }
+
+@media (max-width: 61.94rem) {
+  .socials__container {
+    height: 25rem; }
+  .socials__title {
+    font-size: 3.5rem; }
+  .socials__subtitle {
+    font-size: 2rem; } }
+
+@media (max-width: 35.94rem) {
+  .socials__title {
+    font-size: 2rem; }
+  .socials__subtitle {
+    font-size: 1.2rem; } }

@@ -14,3 +14,18 @@ function searchOpen() {
 toggleIcon.addEventListener('click', toggleOpen);
 buttonSearch.addEventListener('click', searchOpen);
 
+const svgIcons = document.querySelectorAll('.socials__svg');
+const svgPaths = document.querySelectorAll('.socials__path');
+
+function fill() {
+  const child = this.querySelector('.socials__path');
+  child.classList.add('socials__path--filled');
+}
+
+function removeFill() {
+  const child = this.querySelector('.socials__path');
+  child.classList.remove('socials__path--filled');
+}
+
+svgIcons.forEach(svg => svg.addEventListener('mouseleave', removeFill));
+svgIcons.forEach(svg => svg.addEventListener('mouseover', fill));

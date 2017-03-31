@@ -1187,29 +1187,53 @@ blockquote {
 
 .socials {
   background-image: url("../images/yellow-man.jpg");
+  background-position: 50% top;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% top; }
+  background-size: cover; }
   .socials__container {
-    height: 30rem;
-    display: flex;
     align-content: center;
-    flex-wrap: wrap; }
+    display: flex;
+    flex-wrap: wrap;
+    height: 30rem; }
   .socials__title {
     color: #ffffff;
     flex-basis: 100%;
+    font-family: 'Roboto-Bold';
+    font-size: 3.5rem;
     font-weight: normal;
-    font-size: 3.5rem;
-    margin: 0;
     line-height: 1;
-    text-transform: uppercase;
-    font-family: 'Roboto-Bold'; }
-  .socials__subtitle {
-    font-size: 3.5rem;
-    color: #ffffff;
     margin: 0;
+    padding-left: 17px;
+    text-transform: uppercase; }
+  .socials__subtitle {
+    color: #ffffff;
+    flex-basis: 100%;
     font-family: 'Roboto-Light';
-    flex-basis: 100%; }
+    font-size: 3.5rem;
+    margin: 0;
+    padding-left: 17px; }
+  .socials__icons-wrapper {
+    align-items: center;
+    display: flex;
+    flex-basis: 100%;
+    min-height: 80px; }
+  .socials__icon-link {
+    align-items: center;
+    display: flex;
+    flex-basis: 75px;
+    justify-content: center;
+    min-height: 52px; }
+  .socials__svg {
+    border-radius: 50%;
+    transition: padding 0.2s; }
+    .socials__svg:hover {
+      background-color: #292a2e;
+      padding: 6px; }
+  .socials__path {
+    fill: #292a2e;
+    transition: fill .2s; }
+    .socials__path--filled {
+      fill: #b0ce3c; }
 
 @media (max-width: 61.94rem) {
   .socials__container {
@@ -1221,6 +1245,13 @@ blockquote {
 
 @media (max-width: 35.94rem) {
   .socials__title {
-    font-size: 2rem; }
+    font-size: 2rem;
+    padding-left: calc((25% - 40px) / 2); }
   .socials__subtitle {
-    font-size: 1.2rem; } }
+    font-size: 1.2rem;
+    padding-left: calc((25% - 40px) / 2); }
+  .socials__icons-wrapper {
+    flex-wrap: wrap;
+    margin-top: .5rem; }
+  .socials__icon-link {
+    flex-basis: 25%; } }

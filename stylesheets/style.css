@@ -424,7 +424,7 @@ blockquote {
 .input, .form__control {
   background-color: #222327;
   border: 1px solid #2e2f35;
-  color: #a2a2a2; }
+  color: #777777; }
 
 .button {
   background-color: #323338;
@@ -615,7 +615,7 @@ blockquote {
   .service__description {
     font-size: .9rem;
     text-align: center;
-    color: #a2a2a2;
+    color: #777777;
     font-family: 'Roboto-Normal'; }
 
 @media (max-width: 47.94rem) {
@@ -1024,7 +1024,7 @@ blockquote {
     margin: 0 0 .7rem;
     font-family: 'Roboto-Normal'; }
   .person__description {
-    color: #a2a2a2;
+    color: #777777;
     font-family: 'Roboto-Normal';
     font-size: .95rem; }
 
@@ -1129,7 +1129,7 @@ blockquote {
     margin: 1.2rem 0 2rem; }
 
 .more-info {
-  color: #a2a2a2;
+  color: #777777;
   flex: 1;
   margin-left: 3rem; }
   .more-info__title {
@@ -1255,3 +1255,75 @@ blockquote {
     margin-top: .5rem; }
   .socials__icon-link {
     flex-basis: 25%; } }
+
+.recent-activity__container {
+  display: flex;
+  padding-top: 4.5rem; }
+
+.recent-box {
+  width: 33.3333%;
+  color: #777777;
+  font-family: 'Roboto-Normal';
+  font-size: .85rem; }
+  .recent-box:nth-of-type(2) {
+    margin: 0 7%; }
+  .recent-box__title {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: normal;
+    font-family: 'Roboto-Bold';
+    margin: 0;
+    font-size: 1.3rem;
+    padding-bottom: .8rem;
+    border-bottom: 1px solid #424242;
+    width: 100%; }
+
+.photo-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start; }
+  .photo-box__title {
+    border-color: #ffffff;
+    margin: 0 .2rem .5rem; }
+  .photo-box__link {
+    box-sizing: border-box;
+    width: 25%;
+    padding: .2rem; }
+  .photo-box__img {
+    vertical-align: top;
+    width: 100%; }
+
+.post, .tweet {
+  margin-bottom: 2rem; }
+
+.tweet__icon {
+  top: 0.1rem;
+  color: #b0ce3c;
+  font-size: 1.5rem;
+  position: relative; }
+
+.tweet__author {
+  position: relative;
+  display: inline-block;
+  color: #777777; }
+
+.tweet__text--linked {
+  color: #1bbc9d;
+  text-decoration: underline;
+  font-family: 'Roboto-Bold'; }
+
+@media (max-width: 61.94rem) {
+  .recent-activity__container {
+    padding-top: 1.5rem; }
+  .tweet,
+  .post,
+  .tweet {
+    margin-bottom: 0; } }
+
+@media (max-width: 47.94rem) {
+  .recent-activity__container {
+    flex-wrap: wrap; }
+  .recent-box {
+    width: 100%; }
+    .recent-box:nth-of-type(2) {
+      margin: 0; } }

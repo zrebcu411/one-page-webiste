@@ -1,0 +1,105 @@
+.recent-activity {
+  &__container {
+    display: flex;
+    padding-top: 4.5rem;
+  }
+}
+
+.recent-box {
+  width: 33.3333%;
+  color: $secondary-font-color;
+  font-family: 'Roboto-Normal';
+  font-size: .85rem;
+
+  &:nth-of-type(2) {
+    margin: 0 7%;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    color: $font-color;
+    font-weight: normal;
+    font-family: 'Roboto-Bold';
+    margin: 0;
+    font-size: 1.3rem;
+    padding-bottom: .8rem;
+    border-bottom: 1px solid $graphite;
+    width: 100%;
+  }
+}
+
+.photo-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+
+  &__title {
+    border-color: $font-color;
+    margin: 0 .2rem .5rem;
+  }
+
+  &__link {
+    box-sizing: border-box;
+    width: 25%;
+    padding: .2rem;
+  }
+
+  &__img {
+    vertical-align: top;
+    width: 100%;
+  }
+}
+
+.post {
+  margin-bottom: 2rem;
+}
+
+.tweet {
+  @extend .post;
+
+  &__icon {
+    top: 0.1rem;
+    color: $celadon;
+    font-size: 1.5rem;
+    position: relative;
+  }
+
+  &__author {
+    position: relative;
+    display: inline-block;
+    color: $secondary-font-color;
+  }
+}
+
+.tweet__text--linked {
+  color: $cyan;
+  text-decoration: underline;
+  font-family: 'Roboto-Bold';
+}
+
+@media (max-width: $screen-large) {
+  .recent-activity {
+    &__container {
+      padding-top: 1.5rem;
+    }
+  }
+
+  .tweet,
+  .post {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: $screen-medium) {
+  .recent-activity__container {
+    flex-wrap: wrap;
+  }
+
+  .recent-box {
+    width: 100%;
+
+    &:nth-of-type(2) {
+      margin: 0;
+    }
+  }
+}

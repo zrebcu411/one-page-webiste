@@ -1,6 +1,6 @@
 .socials {
-  background-image: url('../images/yellow-man.jpg');
-  background-position: 50% top;
+  background-image: url('../images/baner_5.jpg');
+  background-position: 50% bottom;
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -85,13 +85,15 @@
 
 @media (max-width: $screen-small) {
   .socials {
+    text-align: center;
+
     &__title {
       font-size: 2rem;
       padding-left: calc((25% - 40px) / 2);
     }
 
     &__subtitle {
-      font-size: 1.2rem;
+      font-size: 1.5rem;
       padding-left: calc((25% - 40px) / 2);
     }
 

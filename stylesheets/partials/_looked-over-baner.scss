@@ -1,32 +1,32 @@
 .looked-over {
-  background-image: url('../images/road.jpg');
+  background-image: url('../images/baner_4.jpg');
+  background-position: 60% bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 50% top;
 
   &__container {
-    height: 30rem;
-    display: flex;
     align-content: center;
+    display: flex;
     flex-wrap: wrap;
+    height: 30rem;
   }
 
   &__title {
     color: $font-color;
     flex-basis: 100%;
-    font-weight: normal;
-    font-size: 3.5rem;
-    margin: 0;
-    line-height: 1;
-    text-transform: uppercase;
     font-family: 'Roboto-Bold';
+    font-size: 3.5rem;
+    font-weight: normal;
+    line-height: 1;
+    margin: 0;
+    text-transform: uppercase;
   }
 
   &__subtitle {
-    font-size: 3.5rem;
     color: $font-color;
-    margin: 0;
     font-family: 'Roboto-Light';
+    font-size: 3.5rem;
+    margin: 0;
   }
 }
 

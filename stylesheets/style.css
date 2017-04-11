@@ -386,8 +386,8 @@ th {
 
 body {
   background-color: #292a2e;
-  font-family: 'Roboto-Light';
-  color: #ffffff; }
+  color: #ffffff;
+  font-family: 'Roboto-Light'; }
 
 a {
   color: #ffffff;
@@ -569,58 +569,95 @@ blockquote {
     height: 14rem; } }
 
 .slider {
-  position: relative;
   height: 100vh;
-  margin: 0; }
+  margin: 0;
+  position: relative; }
   .slider__container {
-    display: flex;
     align-content: center;
-    flex-wrap: wrap;
-    height: 100vh; }
+    display: flex;
+    flex-wrap: wrap; }
   .slider__slide {
-    position: absolute;
-    opacity: 0;
-    width: 100%;
+    display: flex;
     height: 100%;
+    opacity: 0;
+    position: absolute;
+    transition: opacity 1s;
+    width: 100%;
     z-index: 1; }
     .slider__slide:nth-of-type(1) {
-      background-image: url("../images/car.jpg");
+      background-image: url("../images/slide_1.jpg");
+      background-position: 70% bottom;
+      background-repeat: no-repeat;
+      background-size: cover; }
+    .slider__slide:nth-of-type(2) {
+      background-image: url("../images/slide_2.jpg");
+      background-repeat: no-repeat;
+      background-size: cover; }
+    .slider__slide:nth-of-type(3) {
+      background-image: url("../images/slide_3.jpg");
       background-repeat: no-repeat;
       background-size: cover; }
     .slider__slide--active {
       opacity: 1;
       z-index: 2; }
   .slider__button-left, .slider__button-right {
-    position: absolute;
-    top: 50%;
-    z-index: 3;
     background-color: transparent;
-    border: none;
     background-repeat: no-repeat;
-    width: 2rem;
+    background-size: contain;
+    border: none;
+    border-radius: 50%;
     height: 2rem;
     padding: 0;
-    background-size: contain;
-    border-radius: 50%; }
+    position: absolute;
+    top: 50%;
+    width: 2rem;
+    z-index: 3; }
     .slider__button-left:hover, .slider__button-right:hover {
       background-color: #424242; }
   .slider__button-left {
     background-image: url("../images/arrow-left.png");
     left: 1rem; }
   .slider__button-right {
-    right: 0;
     background-image: url("../images/arrow-right.png");
     right: 1rem; }
   .slider__caption {
     font-size: 4rem;
     font-weight: normal;
+    line-height: 1;
     margin: 0;
-    line-height: 1; }
+    width: 100%; }
   .slider__subcaption {
-    font-size: 2.9rem;
-    margin: 0;
     font-family: 'Roboto-Bold';
-    line-height: 1; }
+    font-size: 2.9rem;
+    line-height: 1;
+    margin: 0;
+    width: 100%; }
+
+@media (max-width: 74.94rem) {
+  .slider {
+    height: 50vh; }
+    .slider__container {
+      padding: 0 5rem; } }
+
+@media (max-width: 61.94rem) {
+  .slider__caption {
+    font-size: 3rem; }
+  .slider__subcaption {
+    font-size: 2rem; } }
+
+@media (max-width: 47.94rem) {
+  .slider {
+    height: 50vh; }
+    .slider__container {
+      padding: 0 4rem; }
+    .slider__caption {
+      font-size: 2.3rem; }
+    .slider__subcaption {
+      font-size: 1.6rem; }
+    .slider__button-left {
+      left: .5rem; }
+    .slider__button-right {
+      right: .5rem; } }
 
 .services {
   color: #ffffff; }
@@ -689,8 +726,8 @@ blockquote {
     margin: 1.5rem 0; } }
 
 .clean-theme {
-  background-image: url("../images/boja.jpg");
-  background-position: center;
+  background-image: url("../images/baner_1.jpg");
+  background-position: 35% bottom;
   background-repeat: no-repeat;
   background-size: cover; }
   .clean-theme__container {
@@ -823,10 +860,10 @@ blockquote {
     width: 100%; } }
 
 .pricing-baner {
-  background-image: url("../images/car.jpg");
+  background-image: url("../images/baner_2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 40% bottom; }
+  background-position: 50% bottom; }
   .pricing-baner__container {
     height: 30rem;
     display: flex;
@@ -1012,7 +1049,7 @@ blockquote {
     margin-bottom: 1.5rem; } }
 
 .our-team {
-  background-image: url("../images/metro.jpg");
+  background-image: url("../images/baner_3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 25% bottom; }
@@ -1096,29 +1133,29 @@ blockquote {
     width: 100%; } }
 
 .looked-over {
-  background-image: url("../images/road.jpg");
+  background-image: url("../images/baner_4.jpg");
+  background-position: 60% bottom;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% top; }
+  background-size: cover; }
   .looked-over__container {
-    height: 30rem;
-    display: flex;
     align-content: center;
-    flex-wrap: wrap; }
+    display: flex;
+    flex-wrap: wrap;
+    height: 30rem; }
   .looked-over__title {
     color: #ffffff;
     flex-basis: 100%;
+    font-family: 'Roboto-Bold';
+    font-size: 3.5rem;
     font-weight: normal;
-    font-size: 3.5rem;
-    margin: 0;
     line-height: 1;
-    text-transform: uppercase;
-    font-family: 'Roboto-Bold'; }
-  .looked-over__subtitle {
-    font-size: 3.5rem;
-    color: #ffffff;
     margin: 0;
-    font-family: 'Roboto-Light'; }
+    text-transform: uppercase; }
+  .looked-over__subtitle {
+    color: #ffffff;
+    font-family: 'Roboto-Light';
+    font-size: 3.5rem;
+    margin: 0; }
 
 @media (max-width: 61.94rem) {
   .looked-over__container {
@@ -1240,8 +1277,8 @@ blockquote {
     margin-bottom: 1rem; } }
 
 .socials {
-  background-image: url("../images/yellow-man.jpg");
-  background-position: 50% top;
+  background-image: url("../images/baner_5.jpg");
+  background-position: 50% bottom;
   background-repeat: no-repeat;
   background-size: cover; }
   .socials__container {
@@ -1298,17 +1335,19 @@ blockquote {
     font-size: 2rem; } }
 
 @media (max-width: 35.94rem) {
-  .socials__title {
-    font-size: 2rem;
-    padding-left: calc((25% - 40px) / 2); }
-  .socials__subtitle {
-    font-size: 1.2rem;
-    padding-left: calc((25% - 40px) / 2); }
-  .socials__icons-wrapper {
-    flex-wrap: wrap;
-    margin-top: .5rem; }
-  .socials__icon-link {
-    flex-basis: 25%; } }
+  .socials {
+    text-align: center; }
+    .socials__title {
+      font-size: 2rem;
+      padding-left: calc((25% - 40px) / 2); }
+    .socials__subtitle {
+      font-size: 1.5rem;
+      padding-left: calc((25% - 40px) / 2); }
+    .socials__icons-wrapper {
+      flex-wrap: wrap;
+      margin-top: .5rem; }
+    .socials__icon-link {
+      flex-basis: 25%; } }
 
 .recent-activity__container {
   display: flex;

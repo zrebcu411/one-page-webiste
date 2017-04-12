@@ -11,6 +11,7 @@
   
 <body>
   <!-- TO DO: hide navbar items and show longer search input, USUNAC FONT COLOR ZE STYLI - jest w body -->
+   <!-- zmiana slajdu strzalkami-->
   <!-- **************************        header        ************************** -->
   <header class="header">
     <div class="container header__container header--low header--stacked">
@@ -22,12 +23,12 @@
       </h1>
       <nav class="header__navbar header__navbar--wide">
         <ul class="nav nav--closed">
-          <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Services</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Portfolio</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Pricing</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">About</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+          <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
+          <li class="nav__item"><a href="#pricing" class="nav__link">Pricing</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
           <form class="nav__form nav__form--hidden">
             <input type="search" class="input nav__input">
             <button type="button" class="button-search">
@@ -66,7 +67,7 @@
   </section>
 
   <!-- **************************   services section   ************************** -->
-  <section class="services">
+  <section id="services" class="services">
     <div class="container services__container">
       <h2 class="services__header">Our Services</h1>
       <div class="service service--stacked">
@@ -102,7 +103,7 @@
   </section>
 
   <!-- **************************       portfolio       ************************** -->
-  <section class="portfolio">
+  <section id="portfolio" class="portfolio">
     <div class="container">
       <h2 class="portfolio__title">Portfolio</h2>
       <nav class="portfolio__buttons">
@@ -219,7 +220,7 @@
   </section>
 
   <!-- **************************       our price       ************************** -->
-  <section class="our-price">
+  <section id="pricing" class="our-price">
     <div class="container">
       <h2 class="our-price__title">Our price</h2>
       <div class="our-price__row">
@@ -334,7 +335,7 @@
   </section>
 
   <!-- **************************       about us        ************************** -->
-  <section class="about-us">
+  <section id="about" class="about-us">
     <div class="container about-us__container"> 
       <h2 class="about-us__title">About Us</h2>
       <div class="person">
@@ -373,7 +374,7 @@
   </section>
 
   <!-- **************************        contact        ************************** -->
-  <section class="contact"> 
+  <section id="contact" class="contact"> 
     <div class="container contact__container">
       <h2 class="contact__title">Contact Us</h2>
       <form class="form">
@@ -494,6 +495,8 @@
      </div>
    </div>
  </footer>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="js/scripts.js"></script>
 
 </html>

@@ -61,3 +61,11 @@ let slideTimer = setInterval(playSlide, 3500);
 nextSlideButton.addEventListener('click', nextSlide);
 prevSlideButton.addEventListener('click', prevSlide);
 
+//scrolling
+$('a').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $(this).attr('href') ).offset().top
+    }, 1000);
+    return false;
+});
+

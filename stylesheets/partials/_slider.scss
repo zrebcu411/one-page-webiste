@@ -1,7 +1,8 @@
 .slider {
-  height: 100vh;
+  height: 40rem;
   margin: 0;
   position: relative;
+  padding-top: 4rem; // weird
 
   &__container {
     align-content: center;
@@ -53,7 +54,7 @@
     height: 2rem;
     padding: 0;
     position: absolute;
-    top: 50%;
+    top: 50%; //calc(50% + 4rem);
     width: 2rem;
     z-index: 3;
 

@@ -1,9 +1,11 @@
 .portfolio {
+  padding: 3.8rem 0 2.6rem;
+
   &__title {
     color: $font-color;
     font-size: 2.5rem;
     font-weight: normal;
-    margin: 3.8rem 0 .6rem;
+    margin: 0 0 .6rem;
     text-align: center;
   }
 
@@ -72,7 +74,7 @@
   }
 
   &__load-more {
-    margin: 2.6rem 0;
+    margin: 2.6rem 0 0;
     text-align: center;
   }
 }
@@ -101,9 +103,10 @@
 
 @media (max-width: $screen-medium) {
   .portfolio {
+    padding: 1.5rem 0 0;
+
     &__title {
       font-size: 2rem;
-      margin-top: 1.5rem;
     }
 
     &__buttons {
@@ -121,7 +124,7 @@
     }
 
     &__load-more {
-      margin: .1rem 0;
+      margin-top: 1rem;
     }
   }
 }

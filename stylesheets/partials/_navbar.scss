@@ -1,9 +1,20 @@
 .header {
+  background-color: $third-dark;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+
   &__container {
     align-items: center;
     display: flex;
     justify-content: space-between;
     min-height: 8rem;
+    transition: min-height 0.8s;
+  }
+
+  &--low {
+    min-height: 4rem;
   }
 
   &__brand {
@@ -21,7 +32,6 @@
     font-size: 1.6rem;
     font-weight: normal;
     letter-spacing: 1.1px;
-    // margin-bottom: 10px;
     padding-left: 2.8rem;
   }
 }
@@ -38,21 +48,27 @@
     display: inline-block;
     font-family: 'Roboto-Normal';
     font-size: 1.1rem;
-    margin-left: 2rem;
-    width: 100%;
+    margin-left: 1.8rem;
+    padding: 0.9rem 0;
+    transition: color 0.5s;
 
-    &:hover,
-    &:focus {
+    &:hover {
+      color: $nav-item-focus-color;
+    }
+
+    &--active {
       color: $nav-item-focus-color;
     }
   }
 
   &__form {
     display: inline-block;
-    margin-left: 2rem;
+    margin-left: 1.5rem;
   }
 
   &__input {
+    font-family: 'Roboto-Normal';
+    font-size: 0.9rem;
     opacity: 0;
     transition: width 0.5s, opacity 1.5s;
     width: 0;
@@ -94,7 +110,7 @@
 }
 
 @media (max-width: $screen-medium) {
-  .header--low {
+  .header__container {
     min-height: 3rem;
     padding: 0;
   }
@@ -125,6 +141,7 @@
       margin: 0;
       padding: .45rem 0;
       text-align: center;
+      width: 100%;
 
       &:hover,
       &:focus {

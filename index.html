@@ -11,12 +11,12 @@
   
 <body>
   <!-- TO DO: hide navbar items and show longer search input, USUNAC FONT COLOR ZE STYLI - jest w body -->
-   <!-- zmiana slajdu strzalkami-->
+   <!-- zmiana slajdu strzalkami, spacja zeby isc na dol-->
   <!-- **************************        header        ************************** -->
   <header class="header">
-    <div class="container header__container header--low header--stacked">
+    <div class="container header__container header--stacked">
       <h1 class="header__brand header__brand--wide">
-        <span class="logo"><a href="#" class="logo__text">Parallels</a></span>
+        <span class="logo"><a href="#home" class="logo__text">Parallels</a></span>
         <button type="button" class="button-toggle button-toggle--visible">
           <span class="icon-youtubemenu" aria-label="open menu"></span>
         </button>
@@ -30,7 +30,7 @@
           <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
           <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
           <form class="nav__form nav__form--hidden">
-            <input type="search" class="input nav__input">
+            <input type="search" class="input nav__input" placeholder="Search...">
             <button type="button" class="button-search">
               <span class="icon-youtubesearch" aria-label="open search input"></span>
             </button>
@@ -41,7 +41,7 @@
   </header>
 
   <!-- **************************        slider        ************************** -->
-  <section class="carousel">
+  <section id="home" class="carousel">
     <ul class="slider">
       <li class="slider__slide slider__slide--active">
         <div class="container slider__container">
@@ -112,7 +112,7 @@
         <button type="button" class="button button--small">Prototype</button>
         <button type="button" class="button button--small button--active">Photography</button>
       </nav>
-      <div class="container portfolio__photos-container portfolio__photos">
+      <div class="container portfolio__photos-container">
         <div class="portfolio__image-container">
           <img src="images/portfolio_1.jpg" alt="portfolio photo" class="portfolio__photo">
           <div class="portfolio__photo-after">

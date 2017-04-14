@@ -1,7 +1,6 @@
 .footer {
-  padding: 3.5rem 0;
+  padding: 3.5rem;
   background-color: $third-dark;
-  margin-top: 3rem;
 
   &__container {
     display: flex;
@@ -27,7 +26,11 @@
 
 @media (max-width: $screen-large) {
   .footer {
-    margin-top: 1rem;
+    padding: 2rem;
+
+    &__contact-element {
+      text-align: center;
+    }
   }
 }
 

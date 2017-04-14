@@ -1,7 +1,8 @@
 .recent-activity {
+  padding: 4.5rem 0 3.5rem;
+
   &__container {
     display: flex;
-    padding-top: 4.5rem;
   }
 }
 
@@ -79,9 +80,7 @@
 
 @media (max-width: $screen-large) {
   .recent-activity {
-    &__container {
-      padding-top: 1.5rem;
-    }
+    padding: 2.5rem 0 2rem;
   }
 
   .tweet,

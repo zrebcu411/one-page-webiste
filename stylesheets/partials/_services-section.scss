@@ -1,10 +1,11 @@
 .services {
   color: $font-color;
+  padding-bottom: 3rem;
+  margin-top: 4rem;
 
   &__container {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 3rem;
   }
 
   &__header {
@@ -83,6 +84,10 @@
 }
 
 @media (max-width: $screen-small) {
+  .services {
+    padding-bottom: 1.5rem;
+  }
+
   .service--stacked {
     flex-basis: 100%;
   }

@@ -12,16 +12,19 @@
 <body>
   <!-- TO DO: hide navbar items and show longer search input, USUNAC FONT COLOR ZE STYLI - jest w body -->
    <!-- zmiana slajdu strzalkami, spacja zeby isc na dol-->
+     <!-- dodac call to, mail to-->
   <!-- **************************        header        ************************** -->
   <header class="header">
     <div class="container header__container header--stacked">
       <h1 class="header__brand header__brand--wide">
         <span class="logo"><a href="#home" class="logo__text">Parallels</a></span>
-        <button type="button" class="button-toggle button-toggle--visible">
-          <span class="icon-youtubemenu" aria-label="open menu"></span>
+        <button type="button" class="button-toggle button-toggle--visible" aria-expanded="false" title="open/close menu">
+          <span class="icon-youtubemenu" aria-hidden="true"></span>
+          <span class="sr-only">Open/close menu</span>
         </button>
       </h1>
       <nav class="header__navbar header__navbar--wide">
+        <h2 class="sr-only">Menu</h2>
         <ul class="nav nav--closed">
           <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
           <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
@@ -31,8 +34,9 @@
           <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
           <form class="nav__form nav__form--hidden">
             <input type="search" class="input nav__input" placeholder="Search...">
-            <button type="button" class="button-search">
-              <span class="icon-youtubesearch" aria-label="open search input"></span>
+            <button type="button" class="button-search" aria-expanded="false" title="show/hide search input">
+              <span class="icon-youtubesearch" aria-hidden="true"></span>
+              <span class="sr-only">Show/hide search menu</span>
             </button>
           </form>
         </ul>

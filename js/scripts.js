@@ -1,14 +1,16 @@
 const toggleIcon = document.querySelector('.button-toggle');
-const nav = document.querySelector('.nav');
-const navSearchInput = document.querySelector('.nav__input');
 const buttonSearch = document.querySelector('.button-search');
 
 function toggleOpen() {
+  const nav = document.querySelector('.nav');
   nav.classList.toggle('nav--open');
+  toggleIcon.setAttribute('aria-expanded', nav.classList.contains('nav--open'));
 }
 
 function searchOpen() {
+  const navSearchInput = document.querySelector('.nav__input');
   navSearchInput.classList.toggle('nav__input--visible');
+  buttonSearch.setAttribute('aria-expanded', navSearchInput.classList.contains('nav__input--visible'));
 }
 
 toggleIcon.addEventListener('click', toggleOpen);

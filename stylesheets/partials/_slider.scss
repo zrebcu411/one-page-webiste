@@ -1,8 +1,8 @@
 .slider {
   height: 40rem;
   margin: 0;
+  padding-top: 4rem;
   position: relative;
-  padding-top: 4rem; // weird
 
   &__container {
     align-content: center;
@@ -115,6 +115,7 @@
 @media (max-width: $screen-medium) {
   .slider {
     height: 50vh;
+    padding-top: 3rem;
 
     &__container {
       padding: 0 4rem;

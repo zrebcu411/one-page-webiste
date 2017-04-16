@@ -588,8 +588,8 @@ blockquote {
 .slider {
   height: 40rem;
   margin: 0;
-  position: relative;
-  padding-top: 4rem; }
+  padding-top: 4rem;
+  position: relative; }
   .slider__container {
     align-content: center;
     display: flex;
@@ -665,7 +665,8 @@ blockquote {
 
 @media (max-width: 47.94rem) {
   .slider {
-    height: 50vh; }
+    height: 50vh;
+    padding-top: 3rem; }
     .slider__container {
       padding: 0 4rem; }
     .slider__caption {

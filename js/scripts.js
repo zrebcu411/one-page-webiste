@@ -89,9 +89,12 @@ $('a').click(function(e) {
 //scrolling nav
 const navLinks = document.querySelectorAll('.nav__link');
 const headerContainer = document.querySelector('.header__container');
+const test = document.querySelectorAll('.hidden');
+console.log(test);
 
 function changeNavItemActivation() {
   let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  let scrollBottom = scrollTop + window.innerHeight;
 
   if (headerContainer.offsetHeight / 3 < scrollTop) {
     headerContainer.classList.add('header--low');
@@ -110,6 +113,13 @@ function changeNavItemActivation() {
     }
     else {
       currentLink.classList.remove('nav__link--active');
+    }
+  });
+
+  test.forEach(function(elem) {
+    console.log(elem.offsetTop, elem.offsetHeight, scrollBottom);
+    if (elem.offsetTop + elem.offsetHeight / 2  <= scrollBottom) {
+      elem.classList.remove('hidden');
     }
   });
 }

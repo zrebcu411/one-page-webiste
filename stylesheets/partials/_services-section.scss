@@ -26,6 +26,12 @@
   flex-basis: 25%;
   flex-direction: column;
   padding: 0 1rem;
+  transition: opacity .7s, transform .7s;
+
+
+  &.hidden {
+    @include animate(0px, 300px);
+  }
 
   &__icon {
     background-color: $secondary-dark;
@@ -65,11 +71,15 @@
     font-size: .9rem;
     text-align: center;
     color: $secondary-font-color;
-    font-family: 'Roboto-Normal'
+    font-family: 'Roboto-Normal';
   }
 }
 
 @media (max-width: $screen-medium) {
+  .services {
+    margin-top: 3rem;
+  }
+
   .services__container {
     margin: 0;
   }

@@ -1,0 +1,4 @@
+@mixin animate($move-x, $move-y) {
+  transform: translate($move-x, $move-y);
+  opacity: 0;
+}

@@ -1,11 +1,11 @@
 .footer {
-  padding: 3.5rem;
   background-color: $third-dark;
+  padding: 3.5rem;
 
   &__container {
+    align-items: center;
     display: flex;
     justify-content: space-between;
-    align-items: center;
   }
 
   &__contact-wrapper {
@@ -13,9 +13,9 @@
   }
 
   &__contact-element {
+    color: $secondary-font-color;
     font-family: 'Roboto-Normal';
     font-size: 1.2rem;
-    color: $secondary-font-color;
     margin-left: 1.5rem;
   }
 
@@ -43,8 +43,8 @@
     }
 
     &__contact-wrapper {
-      flex-direction: column;
       align-items: center;
+      flex-direction: column;
       margin-top: 1rem;
     }
 

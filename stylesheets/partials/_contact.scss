@@ -8,7 +8,6 @@
   }
 
   &__title {
-    color: $font-color;
     font-size: 2.5rem;
     font-weight: normal;
     margin: 4rem 0;
@@ -28,7 +27,6 @@
 
   &__legend {
     border-bottom: 2px solid $graphite;
-    color: $font-color;
     flex-basis: 100%;
     font-family: 'Roboto-Bold';
     font-size: 1.2rem;
@@ -84,6 +82,8 @@
   }
 
   &__element {
+    color: $secondary-font-color;
+    display: block;
     font-family: 'Roboto-Normal';
     font-size: 1.2rem;
     margin: 0.5rem 0;

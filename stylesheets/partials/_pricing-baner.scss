@@ -1,30 +1,28 @@
 .pricing-baner {
   background-image: url('../images/baner_2.jpg');
+  background-position: 50% bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 50% bottom;
 
   &__container {
-    height: 30rem;
-    display: flex;
     align-content: center;
+    display: flex;
     flex-wrap: wrap;
+    height: 30rem;
   }
 
   &__title {
-    color: $font-color;
     flex-basis: 100%;
-    font-weight: normal;
     font-size: 4.3rem;
-    margin: 0;
+    font-weight: normal;
     line-height: 1;
+    margin: 0;
   }
 
   &__subtitle {
-    font-size: 2.8rem;
-    color: $font-color;
-    margin: 0;
     font-family: 'Roboto-Bold';
+    font-size: 2.8rem;
+    margin: 0;
   }
 }
 

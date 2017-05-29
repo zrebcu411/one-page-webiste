@@ -12,7 +12,6 @@
   }
 
   &__title {
-    color: $font-color;
     flex-basis: 100%;
     font-family: 'Roboto-Bold';
     font-size: 3.5rem;
@@ -24,7 +23,6 @@
   }
 
   &__subtitle {
-    color: $font-color;
     flex-basis: 100%;
     font-family: 'Roboto-Light';
     font-size: 3.5rem;
@@ -45,11 +43,16 @@
     flex-basis: 75px;
     justify-content: center;
     min-height: 52px;
+    transition: transform 1s, opacity 1s;
+
+    &.hidden {
+      opacity: 0;
+      transform: rotate(-720deg);
+    }
   }
 
   &__svg {
     border-radius: 50%;
-    transition: padding 0.2s;
 
     &:hover {
       background-color: $primary-dark;

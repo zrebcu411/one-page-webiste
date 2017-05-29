@@ -2,7 +2,6 @@
   padding: 3.8rem 0 2.6rem;
 
   &__title {
-    color: $font-color;
     font-size: 2.5rem;
     font-weight: normal;
     margin: 0 0 .6rem;
@@ -35,7 +34,6 @@
   &__photo-after {
     align-content: center;
     background-color: $third-dark;
-    color: $font-color;
     display: flex;
     flex-wrap: wrap;
     height: 74%;
@@ -81,7 +79,6 @@
 
 .load-more {
   &__text {
-    color: $font-color;
     display: block;
     font-size: 1.2rem;
   }

@@ -1,7 +1,6 @@
 .services {
-  color: $font-color;
-  padding-bottom: 3rem;
   margin-top: 4rem;
+  padding-bottom: 3rem;
 
   &__container {
     display: flex;
@@ -9,7 +8,6 @@
   }
 
   &__header {
-    color: $font-color;
     flex-basis: 100%;
     font-family: 'Roboto-Light';
     font-size: 2.5rem;
@@ -26,11 +24,11 @@
   flex-basis: 25%;
   flex-direction: column;
   padding: 0 1rem;
-  transition: opacity .7s, transform .7s;
+  transition: opacity 1s, transform 1s;
 
 
   &.hidden {
-    @include animate(0px, 300px);
+    @include animate(0, 200px);
   }
 
   &__icon {
@@ -68,10 +66,10 @@
   }
 
   &__description {
-    font-size: .9rem;
-    text-align: center;
     color: $secondary-font-color;
     font-family: 'Roboto-Normal';
+    font-size: .9rem;
+    text-align: center;
   }
 }
 

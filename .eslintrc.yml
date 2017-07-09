@@ -1,0 +1,23 @@
+extends: airbnb-base
+env:
+    browser: true
+rules:
+    indent: ["error", 2]
+    semi: ["error", "always", {omitLastInOneLineBlock: true}]
+    no-eval: ["error"]
+    no-trailing-spaces: ["error"]
+    one-var-declaration-per-line: ["error", "initializations"]
+    no-irregular-whitespace: ["error"]
+    no-var: ["error"]
+    no-empty: ["error"]
+    linebreak-style: ["error", "unix"]
+    eol-last: ["error", "always"]
+    no-console: ["warn", {"allow": ["warn", "error", "info"]}]
+    no-use-before-define: ["error", { "functions": false }]
+    no-unused-vars: ["error", {"argsIgnorePattern":"^next"}]
+    comma-dangle: ["error", "never"]
+    no-mixed-operators: ["error", {"allowSamePrecedence": true}]
+    no-restricted-syntax: 0
+    no-underscore-dangle: 0
+parserOptions:
+    ecmaVersion: 6

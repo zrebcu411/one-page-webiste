@@ -1,5 +1,4 @@
-(function(namespace) {
-
+(function () {
   // Opening / closing navigation on mobile
   const toggleIcon = document.querySelector('.button-toggle');
   const buttonSearch = document.querySelector('.button-search');
@@ -22,7 +21,6 @@
 
   // SVG icons filling on hover
   const svgIcons = document.querySelectorAll('.socials__svg');
-  const svgPaths = document.querySelectorAll('.socials__path');
 
   function fill() {
     const child = this.querySelector('.socials__path');
@@ -44,10 +42,11 @@
   const prevSlideButton = document.querySelector('.slider__button-left');
 
   let current = 0;
+  const slideTimer = setInterval(playSlide, 3500);
 
   function goToSlide(n) {
     slides[current].classList.remove('slider__slide--active');
-    current = (n + slides.length)%slides.length;
+    current = (n + slides.length) % slides.length;
     slides[current].classList.add('slider__slide--active');
   }
 
@@ -65,7 +64,6 @@
     goToSlide(current - 1);
   }
 
-  let slideTimer = setInterval(playSlide, 3500);
   nextSlideButton.addEventListener('click', nextSlide);
   prevSlideButton.addEventListener('click', prevSlide);
 
@@ -75,17 +73,17 @@
   const navLowHeight = 16 * 4; // 16px(root) * 4rem(nav--low);
 
   const mediaQuery = window.matchMedia('(max-width: 47.94rem)');
-  const headerLowHeight = mediaQuery.matches? 16 * 3 :  16 *  4 // root px font-size * header rem font-size
+  const headerLowHeight = mediaQuery.matches ? 16 * 3 : 16 * 4; // root px font-size * header rem font-size
 
-  $('a').click(function(e) {
+  $('a').click((e) => {
+    e.preventDefault();
 
     $('.nav').removeClass('nav--open');
+    const href = $.attr(e.currentTarget, 'href');
 
-    e.preventDefault();
-    const href = $.attr(this, 'href');
     root.animate({
       scrollTop: $(href).offset().top + 2 - headerLowHeight
-    }, 500, function() {
+    }, 500, () => {
       location.hash = href;
     });
     return false;
@@ -97,45 +95,47 @@
   const headerContainer = document.querySelector('.header__container');
 
   function changeNavItemActivation() {
-    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    let scrollBottom = scrollTop + window.innerHeight;
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    // const scrollBottom = scrollTop + window.innerHeight;
 
     if (headerContainer.offsetHeight / 3 < scrollTop) {
       headerContainer.classList.add('header--low');
-    }
-    else {
+    } else {
       headerContainer.classList.remove('header--low');
     }
 
-    navLinks.forEach(function(link) {
-      let currentLink = link;
-      let refId = currentLink.getAttribute('href').slice(1);
-      let refElement = document.getElementById(refId);
-    
-        if (refElement.offsetTop <= scrollTop + navLowHeight && refElement.offsetTop + refElement.offsetHeight > scrollTop + navLowHeight) {
-          currentLink.classList.add('nav__link--active');
-        }
-        else {
-          currentLink.classList.remove('nav__link--active');
-        }
+    navLinks.forEach((link) => {
+      const currentLink = link;
+      const refId = currentLink.getAttribute('href').slice(1);
+      const refElement = document.getElementById(refId);
+
+      const elementOffsetTop = refElement.offsetTop;
+      const elementOffsetBottom = refElement.offsetTop + refElement.offsetHeight;
+      const scrollPoint = scrollTop + navLowHeight;
+
+      if (elementOffsetTop <= scrollPoint && elementOffsetBottom > scrollPoint) {
+        currentLink.classList.add('nav__link--active');
+      } else {
+        currentLink.classList.remove('nav__link--active');
+      }
     });
   }
   document.addEventListener('scroll', changeNavItemActivation);
 
 
-  // Show and animate element when scroll reaches a half of the element's height 
+  // Show and animate element when scroll reaches a half of the element's height
   const animatedElements = document.querySelectorAll('.hidden');
 
   function animateAfterReach() {
-    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    let scrollBottom = scrollTop + window.innerHeight;
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    const scrollBottom = scrollTop + window.innerHeight;
 
-    animatedElements.forEach(function(elem) {
-      if (elem.offsetTop + elem.offsetHeight / 2  <= scrollBottom) {
+    animatedElements.forEach((elem) => {
+      if ((elem.offsetTop + elem.offsetHeight) / 2 <= scrollBottom) {
         elem.classList.remove('hidden');
       }
     });
   }
   document.addEventListener('scroll', animateAfterReach);
-
 }());
+

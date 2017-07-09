@@ -562,14 +562,13 @@ blockquote {
 
 @media (max-width: 47.94rem) {
   .header__container {
+    flex-wrap: wrap;
     min-height: 3rem;
     padding: 0; }
-  .header--stacked {
-    flex-wrap: wrap; }
-  .header__brand--wide {
+  .header__brand {
     flex-basis: 100%;
     padding-left: .5rem; }
-  .header__navbar--wide {
+  .header__navbar {
     flex-basis: 100%; }
   .button-toggle--visible {
     display: inline-block; }
@@ -742,18 +741,18 @@ blockquote {
     margin: 0; }
   .services__header {
     font-size: 2rem; }
-  .service--stacked {
+  .service {
     flex-basis: 50%; } }
 
 @media (max-width: 35.94rem) {
   .services {
     padding-bottom: 1.5rem; }
-  .service--stacked {
+  .services__header {
+    margin: 1.5rem 0; }
+  .service {
     flex-basis: 100%; }
   .service__icon {
-    padding: 1.3rem; }
-  .services__header {
-    margin: 1.5rem 0; } }
+    padding: 1.3rem; } }
 
 .clean-theme {
   background-image: url("../images/baner_1.jpg");

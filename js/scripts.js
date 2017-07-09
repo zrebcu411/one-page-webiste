@@ -67,6 +67,18 @@
   nextSlideButton.addEventListener('click', nextSlide);
   prevSlideButton.addEventListener('click', prevSlide);
 
+  let isKeyPressed = false;
+  window.addEventListener('keydown', (e) => {
+    if (isKeyPressed) return;
+    isKeyPressed = true;
+    if (e.keyCode === 39) nextSlide();
+    if (e.keyCode === 37) prevSlide();
+  });
+
+  window.addEventListener('keyup', () => {
+    isKeyPressed = false;
+  });
+
 
   // Smooth scrolling
   const root = $('html, body');
@@ -96,7 +108,6 @@
 
   function changeNavItemActivation() {
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    // const scrollBottom = scrollTop + window.innerHeight;
 
     if (headerContainer.offsetHeight / 3 < scrollTop) {
       headerContainer.classList.add('header--low');
@@ -131,7 +142,7 @@
     const scrollBottom = scrollTop + window.innerHeight;
 
     animatedElements.forEach((elem) => {
-      if ((elem.offsetTop + elem.offsetHeight) / 2 <= scrollBottom) {
+      if (elem.offsetTop + (elem.offsetHeight / 2) <= scrollBottom) {
         elem.classList.remove('hidden');
       }
     });
